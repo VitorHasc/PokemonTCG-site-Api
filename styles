@@ -1,0 +1,182 @@
+.containerc{
+    background-color: rgb(226, 28, 28);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 0.8vw;
+    padding-top: 0.5vw;
+    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);    
+}
+
+#logo{
+    width: 13%;
+}
+
+body {
+    margin: 0%;
+    background-image: url(imagens/blue_stylish_halftone_comic_zoom_background.jpg);
+    background-position: center;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position-y: 6%;
+}
+.footer{
+    padding-top: 2vh;
+    padding-bottom: 3%;
+    background-color: rgb(226, 28, 28);
+    box-shadow: 6px 6px 10px 10px rgba(0, 0, 0, 0.4); 
+}
+
+.containerb{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#pokeimg{
+    position:absolute;
+    width: 26%;
+    position: center;
+    margin-top: 8.4%;
+    z-index: 2;
+}
+
+#pokeinput{
+    border-radius: 10px;
+    padding: 0.3%;
+    border: solid 5px;
+    border-style:outset;
+    border-color:rgb(0, 0, 86);
+    font-size: 150%;
+    margin-top: 3%;
+    background-color: rgb(134, 198, 247);
+    color: rgb(0, 8, 165);
+    position:absolute
+}
+
+#pokeinput::placeholder{
+    color:black;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background-color: rgb(183, 69, 69);
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(194, 19, 19);
+}
+
+
+
+#ficaai{
+    width: 25%;
+    margin-top: 8.4%;
+    margin-bottom: 9vw;;
+}
+
+#animationA{
+    position: absolute;
+    margin-top: 15.3%;
+    margin-left: 62.7%;
+    z-index: 3;
+    width: 20.5%;
+}
+
+#animationB{
+    position: absolute;
+    margin-top: 12%;
+    margin-right: 63%;
+    z-index: 3;
+    transform: scaleX(-1);
+    width: 26%;
+}
+
+
+@media screen and (max-width: 500px) {
+
+body {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%; /* Aumenta o tamanho para que o gradiente seja visível */
+}
+
+
+#ficaai{
+    width: 65%;
+    margin-top: 50%;
+    margin-bottom: 62%;
+}
+
+#pokeimg{
+    width: 75%;
+    margin-top: 50%;
+}
+
+#animationB{
+    width: 40%;
+    margin-top: 23%;
+}
+
+#animationA{
+    width: 30%;
+    margin-top: 130%;
+}
+
+#logo{
+    width: 30%;
+}
+
+#pokeinput{
+    margin-top: 8vw;
+}
+
+}
+
+@media screen and (max-width: 912px) {
+
+    body {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%; /* Aumenta o tamanho para que o gradiente seja visível */
+}
+
+
+#ficaai{
+    width: 65%;
+    margin-top: 50%;
+    margin-bottom: 62%;
+}
+
+#pokeimg{
+    width: 75%;
+    margin-top: 50%;
+}
+
+#animationB{
+    width: 40%;
+    margin-top: 17%;
+    margin-left: 10%;
+}
+
+#animationA{
+    width: 30%;
+    margin-top: 145%;
+    margin-right: 3%;
+}
+
+#logo{
+    width: 30%;
+}
+
+#pokeinput{
+    margin-top: 8vw;
+}
+
+}

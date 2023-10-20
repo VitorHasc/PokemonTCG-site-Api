@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cartas TCG</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+    <body background="imagens/blue_stylish_halftone_comic_zoom_background.jpg"  class="background">
+      <script src="ola.js"></script>
+
+        <div class="containerc">
+          <img src="imagens/Sem_título-removebg-preview.png" id="logo">
+        </div>  
+
+        <div class="containerb">
+          <img id="pokeimg">
+          <img id="ficaai" src="imagens/pokemon_card_backside_in_high_resolution_by_atomicmonkeytcg_dah43cy-414w-2x.png">
+          <img id="animationA" src="imagens/pokemon-snorlax-pixel-doodle.gif">
+          <img id="animationB" src="imagens/pokemon-charizard-pixel-doodle.gif">
+          <input placeholder=" Pesquisar" id="pokeinput">
+        </div>
+
+        <div class="footer">
+          <p></p>
+        </div>
+
+  <script>
+    const pokemonName = document.querySelector('.pokemon_name');
+
+    const pokeimg = document.querySelector('#pokeimg');
+
+    const pokeinput = document.querySelector('#pokeinput');
+
+    if (pokeinput) {
+      pokeinput.addEventListener('change', (e) => {
+        if (!pokeimg) return;
+        
+        pokeimg.setAttribute(
+          'src',
+          `https://assets.tcgdex.net/pt/swsh/swsh3/${e.target.value}/high.png`
+        );  
+      });
+    }
+  </script>
+  
+  </body>
+</html>
